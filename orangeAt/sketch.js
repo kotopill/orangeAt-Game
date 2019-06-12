@@ -21,14 +21,14 @@ function collideRectangleCircle(rx, ry, rw, rh, cx, cy, cr) {
 function Opelsin() {
   this.x = random(40, 560);
   this.y = random(-200, -190);
-  this.speed = random(3, 10);
+  this.speed = random(3, 5);
 
   this.fall = function() {
     this.y = this.y + this.speed;
     if (this.y > height) {
       this.y = random(-200, -100);
       this.x = random(40, 560);
-      this.speed = random(3, 10);
+      this.speed = random(3, 5);
     }
   };
   this.show = function() {
@@ -41,7 +41,7 @@ function Opelsin() {
 function opelsinmodel() {
   this.x = random(0, 600);
   this.y = random(-300, -310);
-  this.speed = random(3, 10);
+  this.speed = random(3, 5);
   this.show = function() {
     ellipse(this.x, this.y, 20, 20);
   };
